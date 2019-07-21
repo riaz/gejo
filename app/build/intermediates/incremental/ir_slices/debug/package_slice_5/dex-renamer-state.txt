@@ -1,0 +1,4 @@
+#Sat Jul 20 18:06:41 PDT 2019
+base.0=/Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,225 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+MERGED from [:HERE-sdk:] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/018fe12f17278c2fcdeca5c65e8672e3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v13:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/944ca8869f6bbeac6ca06738efe74a63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13c6e6fbcba5dcc54111d0b819114755/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d504d4c3ae0f3adbd0798858b699a99c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e67433efb9abcea221c364c994091e60/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/5186c7aace486c470ea277d796be567b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/f95eccfaddcc1fbe3d2322ea54a8794b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9f8588cb8cd351bb13f0b03f23e52449/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c59ebe77efee93e61a09509fadd437aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9ff8408b39f515958f24fd837c78b389/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/16ce4d348680acbfbc0a3aac80629341/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d9e4dd5e62a1eb651741ac86fd66358a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/0fc7c06451b0500fb0e43abac669338b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c2ab5b17f23d18c539d673561618545e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/6ae2916c4a1783fa9ee5fc7e00ed4fed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/09f90564228210cb72fd9d8a57d07720/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b1d1141244d4246807a498f90e97683a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/4674aee3073289bb40c09a301aab9326/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/aac19b19ce4ef733a851d4de1de4d77f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13bf595af124576d23e1020469ab05ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/cf7c8d17e661d1da4f57f4078864cc01/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/992544e5f54e7522ccfc281e65c06a2a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/608e8ad2eff4973d0132617cf485f506/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/29f36a300ffce0c63b0166dc3b83c3c5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/eab36f1c0cced55df2b3d3969587bba8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b0cf4e24153bc20f7a1fbb6b8ae6a67d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/01f7a559146ca1ed8eec064637c1f294/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/8b759a46f7c2574e2f341288a799e8f5/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+	package
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:3:5-48
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:1-56:12
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:12:22-74
+application
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:14:5-55:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/4674aee3073289bb40c09a301aab9326/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/4674aee3073289bb40c09a301aab9326/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:16:9-43
+	android:allowBackup
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:19:9-40
+activity#com.here.android.example.guidance.MainActivity
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:20:9-26:20
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:20:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:24:27-74
+meta-data#com.here.android.maps.appid
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:30:9-32:52
+	android:value
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:31:13-55
+meta-data#com.here.android.maps.apptoken
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:33:9-35:54
+	android:value
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:35:13-51
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:34:13-58
+meta-data#com.here.android.maps.license.key
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:36:9-38:716
+	android:value
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:38:13-713
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:37:13-61
+meta-data#INTENT_NAME
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:42:9-44:50
+	android:value
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:44:13-47
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:43:13-39
+service#com.here.android.mpa.service.MapService
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:45:9-52:19
+	android:label
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:47:13-46
+	android:exported
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:48:13-37
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:46:13-67
+intent-filter#action:name:{YOUR_INTENT_NAME}
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:49:13-51:29
+action#{YOUR_INTENT_NAME}
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:50:17-68
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:50:25-58
+service#com.here.android.example.guidance.ForegroundService
+ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:54:9-54
+	android:name
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml:54:18-51
+uses-sdk
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+MERGED from [:HERE-sdk:] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/018fe12f17278c2fcdeca5c65e8672e3/AndroidManifest.xml:7:5-9:41
+MERGED from [:HERE-sdk:] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/018fe12f17278c2fcdeca5c65e8672e3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/944ca8869f6bbeac6ca06738efe74a63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/944ca8869f6bbeac6ca06738efe74a63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13c6e6fbcba5dcc54111d0b819114755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13c6e6fbcba5dcc54111d0b819114755/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d504d4c3ae0f3adbd0798858b699a99c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d504d4c3ae0f3adbd0798858b699a99c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e67433efb9abcea221c364c994091e60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e67433efb9abcea221c364c994091e60/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/5186c7aace486c470ea277d796be567b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/5186c7aace486c470ea277d796be567b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/f95eccfaddcc1fbe3d2322ea54a8794b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/f95eccfaddcc1fbe3d2322ea54a8794b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9f8588cb8cd351bb13f0b03f23e52449/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9f8588cb8cd351bb13f0b03f23e52449/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c59ebe77efee93e61a09509fadd437aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c59ebe77efee93e61a09509fadd437aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9ff8408b39f515958f24fd837c78b389/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/9ff8408b39f515958f24fd837c78b389/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/16ce4d348680acbfbc0a3aac80629341/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/16ce4d348680acbfbc0a3aac80629341/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d9e4dd5e62a1eb651741ac86fd66358a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/d9e4dd5e62a1eb651741ac86fd66358a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/0fc7c06451b0500fb0e43abac669338b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/0fc7c06451b0500fb0e43abac669338b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c2ab5b17f23d18c539d673561618545e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/c2ab5b17f23d18c539d673561618545e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/6ae2916c4a1783fa9ee5fc7e00ed4fed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/6ae2916c4a1783fa9ee5fc7e00ed4fed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/09f90564228210cb72fd9d8a57d07720/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/09f90564228210cb72fd9d8a57d07720/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b1d1141244d4246807a498f90e97683a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b1d1141244d4246807a498f90e97683a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/e6a35346b3627a21647e6af6cf8ba4ee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/4674aee3073289bb40c09a301aab9326/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/4674aee3073289bb40c09a301aab9326/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/aac19b19ce4ef733a851d4de1de4d77f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/aac19b19ce4ef733a851d4de1de4d77f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13bf595af124576d23e1020469ab05ec/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/13bf595af124576d23e1020469ab05ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/cf7c8d17e661d1da4f57f4078864cc01/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/cf7c8d17e661d1da4f57f4078864cc01/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/992544e5f54e7522ccfc281e65c06a2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/992544e5f54e7522ccfc281e65c06a2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/608e8ad2eff4973d0132617cf485f506/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/608e8ad2eff4973d0132617cf485f506/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/29f36a300ffce0c63b0166dc3b83c3c5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/29f36a300ffce0c63b0166dc3b83c3c5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/eab36f1c0cced55df2b3d3969587bba8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/eab36f1c0cced55df2b3d3969587bba8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b0cf4e24153bc20f7a1fbb6b8ae6a67d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/b0cf4e24153bc20f7a1fbb6b8ae6a67d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/01f7a559146ca1ed8eec064637c1f294/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/01f7a559146ca1ed8eec064637c1f294/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/8b759a46f7c2574e2f341288a799e8f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/rmunshi/.gradle/caches/transforms-2/files-2.1/8b759a46f7c2574e2f341288a799e8f5/AndroidManifest.xml:20:5-44
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/src/main/AndroidManifest.xml
