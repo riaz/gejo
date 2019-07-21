@@ -35,15 +35,15 @@ def lldist(pt_1,pt_2):
 def find_closest_parking_spot_to(destination_coords):
     url = 'http://api.sfpark.org/sfpark/rest/availabilityservice'
 
-    # page_text = requests.get(url)
+    # page_text = requests.get(url).text
     page_text = open('parking.xml').read()
 
     soup = Soup(page_text, 'html.parser')
     parking_spot_coords_list = []
     for message in soup.findAll('avl')[1:]:
         box = [float(num) for num in message.find('loc').contents[0][1:-1].split(',')]
-        lats = box[1::2]
-        lons = box[::2]
+        lats = box[1:2]#[1::2]
+        lons = box[0:1]#[::2]
         parking_spot_coords = (sum(lats)/len(lats),sum(lons)/len(lons))
         dist = lldist(destination_coords, parking_spot_coords)
         heappush(parking_spot_coords_list, (dist, parking_spot_coords))
