@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jul 21 09:56:03 PDT 2019
+#Sun Jul 21 11:11:25 PDT 2019
 5.base=/Users/rmunshi/riaz/gejo/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 42.base=/Users/rmunshi/riaz/gejo/app/build/intermediates/transforms/dexMerger/debug/17
 22.path=lib/armeabi-v7a/libCertResourcesPkg.so

@@ -1524,6 +1524,10 @@
         "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/a894f0d7e31a8f4ad80b5da0d3acc3f2/res/layout/design_layout_tab_text.xml"
     },
     {
+        "merged": "/Users/rmunshi/riaz/gejo/app/build/intermediates/res/merged/debug/drawable_ic_directions_bike_black_24dp.xml.flat",
+        "source": "/Users/rmunshi/riaz/gejo/app/src/main/res/drawable/ic_directions_bike_black_24dp.xml"
+    },
+    {
         "merged": "/Users/rmunshi/riaz/gejo/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/a894f0d7e31a8f4ad80b5da0d3acc3f2/res/drawable/ic_mtrl_chip_close_circle.xml"
     },

@@ -30,6 +30,7 @@ import com.here.android.mpa.mapping.MapMarker;
 import com.here.android.mpa.mapping.SupportMapFragment;
 import com.here.android.mpa.mapping.MapRoute;
 import com.here.android.mpa.routing.CoreRouter;
+import com.here.android.mpa.routing.Maneuver;
 import com.here.android.mpa.routing.Route;
 import com.here.android.mpa.routing.RouteOptions;
 import com.here.android.mpa.routing.RoutePlan;
@@ -147,7 +148,7 @@ public class MapFragmentView {
                          * and visual instructions while driving and walking
                          */
                             m_navigationManager = NavigationManager.getInstance();
-                            m_navigationManager.setMapUpdateMode(NavigationManager.MapUpdateMode.NONE);
+                            m_navigationManager.setMapUpdateMode(NavigationManager.MapUpdateMode.ROADVIEW);
 
                         } else {
                             Toast.makeText(m_activity,
@@ -242,7 +243,6 @@ public class MapFragmentView {
                                         Map.MOVE_PRESERVE_ORIENTATION);
 
                                 startNavigation();
-
                             } else {
                                 Toast.makeText(m_activity,
                                         "Error:route results returned is not valid",
@@ -321,7 +321,6 @@ public class MapFragmentView {
         /* Configure Navigation manager to launch navigation on current map */
         m_navigationManager.setMap(m_map);
 
-
         /*
          * Start the turn-by-turn navigation.Please note if the transport mode of the passed-in
          * route is pedestrian, the NavigationManager automatically triggers the guidance which is
@@ -381,11 +380,82 @@ public class MapFragmentView {
                 new WeakReference<NavigationManager.PositionListener>(m_positionListener));
     }
 
+    private NavigationManager.ManeuverEventListener m_manueverListner = new NavigationManager.ManeuverEventListener() {
+        @Override
+        public void onManeuverEvent() {
+            super.onManeuverEvent();
+
+            Maneuver maneuver = m_navigationManager.getNextManeuver();
+            if (maneuver != null) {
+
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_LEFT) {
+                    Log.d("Turn", "Turned Left light");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_RIGHT) {
+                    Log.d("Turn", "Turned Right light");
+                }
+
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_LEFT) {
+                    Log.d("Turn", "Turned heavy Left");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_RIGHT) {
+                    Log.d("Turn", "Turned heavy right");
+                }
+
+                if (maneuver.getAction() == Maneuver.Action.END) {
+                    // notify the user that the route is complete
+                }
+
+                // display current or next road information
+                // display maneuver.getDistanceToNextManeuver()
+            }
+
+
+        }
+    };
+
     private NavigationManager.PositionListener m_positionListener = new NavigationManager.PositionListener() {
         @Override
         public void onPositionUpdated(GeoPosition geoPosition) {
+            GeoCoordinate coor = geoPosition.getCoordinate();
+
+            Log.d("Geo", coor.getLatitude() + " " + coor.getLongitude());
+
+
+
+
             /* Current position information can be retrieved in this callback */
         }
+
+        public void onNewInstructionEvent() {
+
+            Maneuver maneuver = m_navigationManager.getNextManeuver();
+            if (maneuver != null) {
+
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_LEFT) {
+                    Log.d("Turn", "Turned Left light");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_RIGHT) {
+                    Log.d("Turn", "Turned Right light");
+                }
+
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_LEFT) {
+                    Log.d("Turn", "Turned heavy Left");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_RIGHT) {
+                    Log.d("Turn", "Turned heavy right");
+                }
+
+                if (maneuver.getAction() == Maneuver.Action.END) {
+                    // notify the user that the route is complete
+                }
+
+                // display current or next road information
+                // display maneuver.getDistanceToNextManeuver()
+            }
+        }
+
+
     };
 
     private NavigationManager.NavigationManagerEventListener m_navigationManagerEventListener = new NavigationManager.NavigationManagerEventListener() {
@@ -421,6 +491,36 @@ public class MapFragmentView {
             Toast.makeText(m_activity, "Country info updated from " + s + " to " + s1,
                     Toast.LENGTH_SHORT).show();
         }
+
+
+        public void onNewInstructionEvent() {
+
+            Maneuver maneuver = m_navigationManager.getNextManeuver();
+            if (maneuver != null) {
+
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_LEFT) {
+                    Log.d("Turn", "Turned Left light");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.LIGHT_RIGHT) {
+                    Log.d("Turn", "Turned Right light");
+                }
+
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_LEFT) {
+                    Log.d("Turn", "Turned heavy Left");
+                }
+                if (maneuver.getTurn() == Maneuver.Turn.HEAVY_RIGHT) {
+                    Log.d("Turn", "Turned heavy right");
+                }
+
+                if (maneuver.getAction() == Maneuver.Action.END) {
+                    // notify the user that the route is complete
+                }
+
+                // display current or next road information
+                // display maneuver.getDistanceToNextManeuver()
+            }
+        }
+
     };
 
     public void onDestroy() {

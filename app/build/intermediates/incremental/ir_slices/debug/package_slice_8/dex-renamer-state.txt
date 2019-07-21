@@ -1,4 +1,4 @@
-#Sun Jul 21 09:55:56 PDT 2019
+#Sun Jul 21 11:11:21 PDT 2019
 base.0=/Users/rmunshi/riaz/gejo/app/build/intermediates/transforms/dexMerger/debug/8
 path.0=classes.dex
 renamed.0=classes.dex
