@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:id="@+id/linearLayout">
 
     <!-- Map Fragment embedded with the map object -->
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+
+    <SearchView
+        android:id="@+id/simpleSearchView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="48dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <SearchView
+        android:id="@+id/simpleSearchView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="222dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <Button
         android:id="@+id/naviCtrlButton"
-        android:layout_gravity="right" />
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <fragment
-        class="com.here.android.mpa.mapping.SupportMapFragment"
         android:id="@+id/mapfragment"
+        class="com.here.android.mpa.mapping.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="582dp"
+        tools:layout_conversion_absoluteHeight="587dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="144dp" />
 
 </LinearLayout>

@@ -26,6 +26,7 @@ import com.here.android.mpa.common.GeoPosition;
 import com.here.android.mpa.common.OnEngineInitListener;
 import com.here.android.mpa.guidance.NavigationManager;
 import com.here.android.mpa.mapping.Map;
+import com.here.android.mpa.mapping.MapMarker;
 import com.here.android.mpa.mapping.SupportMapFragment;
 import com.here.android.mpa.mapping.MapRoute;
 import com.here.android.mpa.routing.CoreRouter;
@@ -37,6 +38,8 @@ import com.here.android.mpa.routing.RouteWaypoint;
 import com.here.android.mpa.routing.Router;
 import com.here.android.mpa.routing.RoutingError;
 
+import android.location.Location;
+import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -56,6 +59,7 @@ import android.widget.Toast;
  * bundled within the SDK package to be used out-of-box, please refer to the Developer's guide for
  * the usage.
  */
+
 public class MapFragmentView {
     private SupportMapFragment m_mapFragment;
     private AppCompatActivity m_activity;
@@ -66,11 +70,13 @@ public class MapFragmentView {
     private Route m_route;
     private boolean m_foregroundServiceStarted;
 
+
     public MapFragmentView(AppCompatActivity activity) {
         m_activity = activity;
         initMapFragment();
         initNaviControlButton();
     }
+
 
     private SupportMapFragment getMapFragment() {
         return (SupportMapFragment) m_activity.getSupportFragmentManager().findFragmentById(R.id.mapfragment);
@@ -79,6 +85,18 @@ public class MapFragmentView {
     private void initMapFragment() {
         /* Locate the mapFragment UI element */
         m_mapFragment = getMapFragment();
+
+        /* showing up a physical marker in the map*/
+        /*m_mapFragment.init(new OnEngineInitListener() {
+            @Override
+            public void onEngineInitializationCompleted(OnEngineInitListener.Error error) {
+                if (error == OnEngineInitListener.Error.NONE) {
+                    map = m_mapFragment.getMap();
+                    map.setCenter(new GeoCoordinate(37.7397, -121.4252, 0.0), Map.Animation.NONE);
+                    map.setZoomLevel((map.getMaxZoomLevel() + map.getMinZoomLevel()) / 2);
+                }
+            }
+        });*/
 
         // Set path of isolated disk cache
         String diskCacheRoot = Environment.getExternalStorageDirectory().getPath()
@@ -108,16 +126,29 @@ public class MapFragmentView {
 
                         if (error == Error.NONE) {
                             m_map = m_mapFragment.getMap();
-                            m_map.setCenter(new GeoCoordinate(49.259149, -123.008555),
+
+                            // this is the galvanize venue
+                            m_map.setCenter(new GeoCoordinate(37.7881236,-122.3964316),
                                     Map.Animation.NONE);
+                            m_map.setCartoMarkersVisible(true);
+                            m_map.setOrientation(0);
+
                             //Put this call in Map.onTransformListener if the animation(Linear/Bow)
                             //is used in setCenter()
-                            m_map.setZoomLevel(13.2);
+
+                            MapMarker defaultMarker = new MapMarker();
+                            defaultMarker.setCoordinate(new GeoCoordinate(37.7881236,-122.3964316, 0.0));
+                            m_map.addMapObject(defaultMarker);
+
+                            m_map.setZoomLevel(15);
+
                         /*
                          * Get the NavigationManager instance.It is responsible for providing voice
                          * and visual instructions while driving and walking
                          */
                             m_navigationManager = NavigationManager.getInstance();
+                            m_navigationManager.setMapUpdateMode(NavigationManager.MapUpdateMode.NONE);
+
                         } else {
                             Toast.makeText(m_activity,
                                     "ERROR: Cannot initialize Map with error " + error,
@@ -155,9 +186,12 @@ public class MapFragmentView {
 
         /* Define waypoints for the route */
         /* START: 4350 Still Creek Dr */
-        RouteWaypoint startPoint = new RouteWaypoint(new GeoCoordinate(49.259149, -123.008555));
+
+        RouteWaypoint startPoint = new RouteWaypoint(new GeoCoordinate(37.7881236,-122.3964316));
         /* END: Langley BC */
-        RouteWaypoint destination = new RouteWaypoint(new GeoCoordinate(49.073640, -122.559549));
+        RouteWaypoint destination = new RouteWaypoint(new GeoCoordinate(37.7766425,-122.3947716));
+
+
 
         /* Add both waypoints to the route plan */
         routePlan.addWaypoint(startPoint);
@@ -189,6 +223,16 @@ public class MapFragmentView {
                                 /* Add the MapRoute to the map */
                                 m_map.addMapObject(mapRoute);
 
+                                //TODO: to check if this is marked
+                                MapMarker defaultMarker = new MapMarker();
+                                defaultMarker.setCoordinate(new GeoCoordinate(37.7766425,-122.3947716, 0.0));
+                                m_map.addMapObject(defaultMarker);
+
+                                //37.804001666666665, -122.44860166666666
+                                //37.77504166666667, -122.46609333333333
+                                //37.767078504583665, -122.40735858678818
+
+
                                 /*
                                  * We may also want to make sure the map view is orientated properly
                                  * so the entire route can be easily seen.
@@ -198,6 +242,7 @@ public class MapFragmentView {
                                         Map.MOVE_PRESERVE_ORIENTATION);
 
                                 startNavigation();
+
                             } else {
                                 Toast.makeText(m_activity,
                                         "Error:route results returned is not valid",
@@ -276,6 +321,7 @@ public class MapFragmentView {
         /* Configure Navigation manager to launch navigation on current map */
         m_navigationManager.setMap(m_map);
 
+
         /*
          * Start the turn-by-turn navigation.Please note if the transport mode of the passed-in
          * route is pedestrian, the NavigationManager automatically triggers the guidance which is
@@ -290,10 +336,11 @@ public class MapFragmentView {
         alertDialogBuilder.setNegativeButton("Navigation",new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialoginterface, int i) {
                 m_navigationManager.startNavigation(m_route);
-                m_map.setTilt(60);
+
                 startForegroundService();
             };
         });
+
         alertDialogBuilder.setPositiveButton("Simulation",new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialoginterface, int i) {
                 m_navigationManager.simulate(m_route,60);//Simualtion speed is set to 60 m/s

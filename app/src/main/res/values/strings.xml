@@ -1,8 +1,19 @@
 <resources>
-    <string name="app_name">Guidance</string>
+    <string name="app_name">Gaja</string>
     <string name="start_navi">Start Navigation</string>
     <string name="stop_navi">Stop Navigation</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Hello blank fragment</string>
+    <string name="app_label">Gaja</string>
+    <string name="gaja_setting">Setting</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="title_activity_smart_car_oauth">SmartCarOauth</string>
+    <string name="smartcar_auth_scheme">sc889bebb5-8db5-463e-b01c-4d5037ddc9de</string>
+    <string name="smartcar_auth_host">exchange</string>
+    <string name="client_id">889bebb5-8db5-463e-b01c-4d5037ddc9de</string>
+    <string name="app_server">http://localhost:8000</string>
+    <string name="title_activity_display_info">DisplayInfoActivity</string>
+
 </resources>

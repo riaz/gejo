@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/rmunshi/riaz/gejo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
+                {
+                    "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/1db584cbddf3eac05a5e5da616299fd1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "2646",
+                        "endLines": "39",
+                        "endColumns": "12",
+                        "endOffsets": "2791"
+                    }
+                },
                 {
                     "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/res/values-v23/values-v23.xml",
                     "from": {

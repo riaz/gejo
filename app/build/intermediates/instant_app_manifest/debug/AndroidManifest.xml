@@ -6,15 +6,14 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- To allow starting foreground services on Android P+ -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> &lt;!&ndash; To allow starting foreground services on Android P+ &ndash;&gt; -->
     <!-- https://developer.android.com/preview/behavior-changes#fg-svc -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
@@ -25,7 +24,28 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.here.android.example.guidance.DisplayInfoActivity"
+            android:label="@string/title_activity_display_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.here.android.example.guidance.SmartCarOauth"
+            android:label="@string/title_activity_smart_car_oauth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.here.android.example.guidance.SearchableActivity"
+            android:label="@string/title_activity_searchable"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
         <activity android:name="com.here.android.example.guidance.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,9 +53,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <!--
-         Developers should put application credentials here.To obtain them, please register the application
+Developers should put application credentials here.To obtain them, please register the application
          at https://developer.here.com/develop/mobile-sdks
         -->
         <meta-data
@@ -47,9 +66,8 @@
         <meta-data
             android:name="com.here.android.maps.license.key"
             android:value="GMNuk/l1UkqmNkRhLhT2h2uLAqyWMb3VZwsFzzBF2PxhAN0XHmJhgOpS9gVVbo1VbxfxROhP8xKXdS52M+uGeR0HM67DTMeQChauOzX2WFd/jDw76THl96FRMwFcVaUEIPcXk8kxENdfYi1bJOVZ1wcoZiEOqoMETsmweS6foQlOhZPcVRW2x+Dakm90WID2gaDzLxHyPouN//cqVeOJ/bslLLn178XJAxFFwMGWWrW2dLshMhdsncRWhHc13islpnpIWrLct26FQ/9Nj1xk10eyhlKp/kQutZaGJvlWOaz6EnAd9qYuolJkRO6SRKvvnC7ARn+eW18iCkw6hyzqdyu7SMjov8k1lo9QPbZpEPjTw9Vv7be+RroHgVkAlT8o8zbnBNbgerjIM/oAxKrhTeR8O7twETTETfPunuSTiXvOuaIRrGxwUMHMucMM1M9UgPSZInSA5uwCwYrsfmu2mz3OAOr8R/L02OWnhshuk8piZ2YqJpqXLIiS8xV6UcDn1/ynsNoi6Q0zDNm9lH1xvDGxNu3wbMwfTX8yRhl7UkXfXVVHnD/ra63nGnvCiI8ut9CrbSpdnNc2EQ2zRWU7XQo1oTQ+jQrlne7ec3vE6LW1y1OnuEzHB17TdkyH7CB9buD7FKqJX8fCeeOe4JKgNcXEyooWKh7iZbaRFuqMXOI=" />
-
         <!--
-         Developers should always provide custom values for each of {YOUR_LABEL_NAME} and {YOUR_INTENT_NAME}.
+Developers should always provide custom values for each of {YOUR_LABEL_NAME} and {YOUR_INTENT_NAME}.
          Do not reuse HERE SDK defaults.
         -->
         <meta-data
@@ -65,6 +83,13 @@
             </intent-filter>
         </service>
         <service android:name="com.here.android.example.guidance.ForegroundService" />
+
+        <activity android:name="com.smartcar.sdk.WebViewActivity" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.here.android.example.guidance.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

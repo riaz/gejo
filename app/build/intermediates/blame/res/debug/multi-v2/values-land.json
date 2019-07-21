@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/rmunshi/riaz/gejo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/res/values-land/values-land.xml",
@@ -11,6 +11,25 @@
                         "startOffsets": "55,125,196",
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/a894f0d7e31a8f4ad80b5da0d3acc3f2/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
                     }
                 }
             ]

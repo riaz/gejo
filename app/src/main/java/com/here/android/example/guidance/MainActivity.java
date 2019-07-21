@@ -17,13 +17,19 @@
 package com.here.android.example.guidance;
 
 import android.Manifest;
+import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 /**
@@ -49,11 +55,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (hasPermissions(this, RUNTIME_PERMISSIONS)) {
+
+            // Get the intent, verify the action and get the query
+            Intent intent = getIntent();
+            if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+                String query = intent.getStringExtra(SearchManager.QUERY);
+                //doMySearch(query);
+            }
+
             setupMapFragmentView();
         } else {
             ActivityCompat
                     .requestPermissions(this, RUNTIME_PERMISSIONS, REQUEST_CODE_ASK_PERMISSIONS);
         }
+
+
     }
 
     /**
@@ -116,4 +132,29 @@ public class MainActivity extends AppCompatActivity {
         m_mapFragmentView.onDestroy();
         super.onDestroy();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.gaja_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.setting:
+                //newGame();
+                Log.d("Demo","About to go to smartcar activity");
+
+                Intent i = new Intent(this, SmartCarOauth.class);
+                this.startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 }

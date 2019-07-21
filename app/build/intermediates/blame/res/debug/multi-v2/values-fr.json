@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmunshi/riaz/here-android-sdk-examples/turn-by-turn-navigation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/Users/rmunshi/riaz/gejo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/rmunshi/.gradle/caches/transforms-2/files-2.1/558543b3474a781725c5438c41fd1d64/res/values-fr/values-fr.xml",
