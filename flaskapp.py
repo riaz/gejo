@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup as Soup
 from math import radians, sin, cos, acos, pi, copysign
 from heapq import heappush, heappop
 import ast
+import middleware
 
 def f64_acos(x):
     n = 40 # precision
@@ -35,15 +36,15 @@ def lldist(pt_1,pt_2):
 def find_closest_parking_spot_to(destination_coords):
     url = 'http://api.sfpark.org/sfpark/rest/availabilityservice'
 
-    # page_text = requests.get(url)
+    # page_text = requests.get(url).text
     page_text = open('parking.xml').read()
 
     soup = Soup(page_text, 'html.parser')
     parking_spot_coords_list = []
     for message in soup.findAll('avl')[1:]:
         box = [float(num) for num in message.find('loc').contents[0][1:-1].split(',')]
-        lats = box[1::2]
-        lons = box[::2]
+        lats = box[1:2]#[1::2]
+        lons = box[0:1]#[::2]
         parking_spot_coords = (sum(lats)/len(lats),sum(lons)/len(lons))
         dist = lldist(destination_coords, parking_spot_coords)
         heappush(parking_spot_coords_list, (dist, parking_spot_coords))
@@ -51,41 +52,49 @@ def find_closest_parking_spot_to(destination_coords):
     closest_parking_spot_coords = heappop(parking_spot_coords_list)[1]
     return closest_parking_spot_coords
 
-def get_jump_bikes():
-    url = 'https://sf.jumpbikes.com/opendata/free_bike_status.json'
-    data = requests.get(url).json()
-    raw_bikes = data['data']['bikes']
-    bikes = []
-    for raw_bike in raw_bikes:
-        bike = {
-            'company': 'Jump',
-            'bike_id': raw_bike['bike_id'],
-            'latitude': raw_bike['lat'],
-            'longitude': raw_bike['lon']
-        }
-        bikes.append(bike)
-    return bikes
+# def get_jump_bikes():
+#     url = 'https://sf.jumpbikes.com/opendata/free_bike_status.json'
+#     try:
+#         data = requests.get(url).json()
+#         raw_bikes = data['data']['bikes']
+#         bikes = []
+#         for raw_bike in raw_bikes:
+#             bike = {
+#                 'company': 'Jump',
+#                 'bike_id': raw_bike['bike_id'],
+#                 'latitude': raw_bike['lat'],
+#                 'longitude': raw_bike['lon']
+#             }
+#             bikes.append(bike)
+#     except:
+#         bikes = []
+#     return bikes
 
 def get_ford_bikes():
     url = 'https://gbfs.fordgobike.com/gbfs/en/station_information.json'
-    data = requests.get(url).json()
-    raw_bikes = data['data']['stations']
-    bikes = []
-    for raw_bike in raw_bikes:
-        bike = {
-            'company': 'Ford',
-            'bike_id': raw_bike['external_id'],
-            'latitude': raw_bike['lat'],
-            'longitude': raw_bike['lon']
-        }
-        bikes.append(bike)
+    try:
+        data = requests.get(url).json()
+        raw_bikes = data['data']['stations']
+        bikes = []
+        for raw_bike in raw_bikes:
+            bike = {
+                'company': 'Ford',
+                'bike_id': raw_bike['external_id'],
+                'latitude': raw_bike['lat'],
+                'longitude': raw_bike['lon']
+            }
+            bikes.append(bike)
+    except:
+        bikes = []
     return bikes
 
 def get_bike_data():
-	bike_data = get_jump_bikes() + get_ford_bikes()
+	bike_data = get_ford_bikes()
 	return bike_data
 
 app = Flask(__name__)
+
+app.wsgi_app = middleware.SimpleMiddleWare(app.wsgi_app)
 
 @app.route('/park/<destination_coords>')
 def park(destination_coords):
@@ -102,5 +111,5 @@ def bikes():
     bike_data = get_bike_data()
     return json.dumps(bike_data)
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
